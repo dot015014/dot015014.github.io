@@ -1,15 +1,17 @@
 :root {
   color-scheme: light;
-  --bg: #f7f8f5;
+  --bg: #fbfff1;
   --surface: #ffffff;
-  --surface-strong: #eef2ed;
+  --surface-strong: #f0f9df;
   --text: #171c1a;
-  --muted: #65706b;
-  --line: #dce3de;
-  --accent: #22735b;
-  --accent-dark: #155442;
-  --accent-soft: #dbece5;
-  --ink: #10221c;
+  --muted: #68715f;
+  --line: #dfe8cf;
+  --accent: #f28db4;
+  --accent-dark: #d95f93;
+  --accent-soft: #ffe2ee;
+  --main: #d9f99d;
+  --main-soft: #f2ffd5;
+  --ink: #1c2515;
 }
 
 * {
@@ -160,9 +162,10 @@ h3 {
   border: 1px solid var(--line);
   border-radius: 8px;
   background:
-    linear-gradient(135deg, rgba(34, 115, 91, 0.14), transparent 34%),
+    linear-gradient(135deg, rgba(217, 249, 157, 0.64), transparent 34%),
+    linear-gradient(315deg, rgba(242, 141, 180, 0.2), transparent 38%),
     var(--surface);
-  box-shadow: 0 24px 70px rgba(16, 34, 28, 0.11);
+  box-shadow: 0 24px 70px rgba(47, 63, 32, 0.12);
   padding: 28px;
 }
 
@@ -258,11 +261,11 @@ h3 {
 }
 
 .skill-list li {
-  border: 1px solid #bfd6cc;
+  border: 1px solid #cfe99a;
   border-radius: 8px;
-  background: var(--accent-soft);
+  background: var(--main);
   padding: 10px 14px;
-  color: var(--accent-dark);
+  color: #405316;
   font-size: 14px;
   font-weight: 800;
 }
