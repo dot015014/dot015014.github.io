@@ -5,174 +5,434 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="백엔드 개발자 신수진의 포트폴리오입니다. 서비스 운영, CMS 고도화, 유지보수 경험을 정리합니다."
+      content="백엔드 개발자 신수진의 포트폴리오입니다. Java, Spring 기반 서비스 개발과 CMS, ERP, 유지보수 경험을 정리합니다."
     />
     <meta name="robots" content="noindex, nofollow" />
     <title>신수진 | Backend Developer</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand" href="#top">dot015014</a>
-      <nav class="nav" aria-label="주요 메뉴">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+    <main class="desk" id="top">
+      <div class="desk-bar" aria-label="포트폴리오 정보">
+        <a class="brand" href="#top">Portfolio</a>
+        <span>Backend portfolio by Shin Sujin</span>
+      </div>
 
-    <main id="top">
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <p class="eyebrow">Backend Developer Portfolio</p>
-          <h1 id="hero-title">신수진</h1>
-          <p class="hero-lead">
-            안정적인 서비스 흐름과 운영 가능한 구조를 고민하는 백엔드 개발자입니다.
-            기능 구현 이후의 유지보수성, 데이터 흐름, 협업 맥락까지 함께 봅니다.
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#projects">프로젝트 보기</a>
-            <a class="button secondary" href="#contact">연락하기</a>
+      <section class="desk-section intro-section" aria-labelledby="intro-section-title">
+        <div class="section-tab">
+          <span>01</span>
+          <h2 id="intro-section-title">내 소개 / 스킬</h2>
+        </div>
+
+        <section class="resume-card intro-memo" aria-labelledby="intro-title">
+          <p class="label">backend developer</p>
+          <h1 id="intro-title">Java/Spring 기반 백엔드 개발자</h1>
+          <div class="intro-profile" aria-label="기본 정보">
+            <strong>신수진</strong>
+            <span>1995년생 · 만 30세</span>
+            <span>웹개발 경력 4년 5개월</span>
+            <a href="mailto:pin01501495@gmail.com">pin01501495@gmail.com</a>
           </div>
-        </div>
+        </section>
 
-        <div class="system-card" aria-label="백엔드 시스템 구성 이미지">
-          <div class="system-row">
-            <span>Client</span>
-            <span>API</span>
+        <aside class="resume-card focus-memo" aria-label="경력 요약">
+          <p class="label">career.summary</p>
+          <h3>경력 요약</h3>
+          <ul>
+              <li>Java/Spring 기반 웹 서비스와 업무 시스템 개발</li>
+              <li>CMS, ERP, NPS, B2C 여행 리뷰 플랫폼 구축 및 고도화</li>
+              <li>레거시 JSP 프로젝트의 Spring Boot + Thymeleaf 전환</li>
+              <li>REST API 문서화, DB 설계서/ERD 작성, 통합 테스트 수행</li>
+              <li>운영 편의성과 유지보수성을 고려한 기능 개선</li>
+          </ul>
+        </aside>
+
+        <section class="resume-card profile-memo" aria-label="학력과 업무 성향">
+          <p class="label">profile.txt</p>
+          <h3>프로필</h3>
+          <dl>
+            <div>
+              <dt>Education</dt>
+              <dd>계명대학교 4년제 졸업</dd>
+            </div>
+            <div>
+              <dt>Style</dt>
+              <dd>
+                기존 시스템의 구조를 파악하고, 운영에 필요한 기능을 안정적으로 개선하는
+                업무에 강점이 있습니다.
+              </dd>
+            </div>
+          </dl>
+        </section>
+
+        <section class="resume-card map-memo" aria-label="기술 스택">
+          <p class="label">skills.map</p>
+          <div class="map-grid">
+            <span>Java</span>
+            <span>Spring Framework</span>
+            <span>Spring Boot</span>
+            <span>JSP</span>
+            <span>MyBatis / iBatis</span>
+            <span>Thymeleaf</span>
+            <span>JavaScript</span>
+            <span>jQuery</span>
+            <span>AngularJS</span>
+            <span>HTML5</span>
+            <span>MariaDB / MySQL</span>
+            <span>PostgreSQL</span>
+            <span>Oracle / MSSQL</span>
+            <span>SVN / Git</span>
+            <span>REST API</span>
+            <span>JPA</span>
+            <span>Redis</span>
+            <span>React / Vite</span>
           </div>
-          <div class="system-line"></div>
-          <div class="system-grid">
-            <div>
-              <strong>Auth</strong>
-              <small>권한과 세션</small>
-            </div>
-            <div>
-              <strong>CMS</strong>
-              <small>운영 도구</small>
-            </div>
-            <div>
-              <strong>Data</strong>
-              <small>정합성 관리</small>
-            </div>
-            <div>
-              <strong>Ops</strong>
-              <small>유지보수</small>
-            </div>
+        </section>
+      </section>
+
+      <section class="desk-section project-section" aria-labelledby="project-section-title">
+        <div class="section-tab">
+          <span>02</span>
+          <h2 id="project-section-title">참여 프로젝트</h2>
+        </div>
+
+        <section class="resume-card company-card" aria-labelledby="sj-title">
+          <p class="label">2023.02 - 2024.08</p>
+          <h3 id="sj-title">에스제이테크놀로지</h3>
+          <p class="company-meta">솔루션개발팀 · 대리 · 웹개발</p>
+
+          <article class="project-item" aria-labelledby="cms-title">
+            <p class="label">2024.01 - 2024.08</p>
+            <h4 id="cms-title">자사 CMS 솔루션 3.0 고도화</h4>
+            <dl>
+              <div>
+                <dt>Stack</dt>
+                <dd>Java, Spring Boot, MyBatis, Thymeleaf, MariaDB, REST API</dd>
+              </div>
+              <div>
+                <dt>Work</dt>
+                <dd>
+                  <ul>
+                    <li>오래된 Spring(Java 8) + JSP 기반 프로젝트를 Spring Boot + Thymeleaf 구조로 마이그레이션</li>
+                    <li>관리자 메뉴를 중심으로 화면과 기능 개선 작업 담당</li>
+                    <li>외부 플러그인 의존성을 줄이기 위한 솔루션 전용 JavaScript grid 라이브러리 자체 개발</li>
+                    <li>Swagger 3.0 기반 REST API 문서화 진행</li>
+                  </ul>
+                </dd>
+              </div>
+            </dl>
+          </article>
+
+          <article class="project-item" aria-labelledby="cjenm-title">
+            <p class="label">2023.09 - 2024.07</p>
+            <h4 id="cjenm-title">CJ ENM NPS 고도화</h4>
+            <dl>
+              <div>
+                <dt>Stack</dt>
+                <dd>Java, Spring Framework, JSP, JavaScript, iBatis</dd>
+              </div>
+              <div>
+                <dt>Work</dt>
+                <dd>
+                  <ul>
+                    <li>방송국 영상 파일 관리 시스템(NPS)의 유지보수와 기능 고도화 담당</li>
+                    <li>부조전송 기능을 위한 리눅스 파일서버 탐색 GUI 구현</li>
+                  </ul>
+                </dd>
+              </div>
+            </dl>
+          </article>
+
+          <article class="project-item" aria-labelledby="tourclan-title">
+            <p class="label">2023.03 - 2023.06</p>
+            <h4 id="tourclan-title">투어클랜 서비스 구축</h4>
+            <dl>
+              <div>
+                <dt>Stack</dt>
+                <dd>Java, JavaScript, Spring Boot, Spring Security, MyBatis, Thymeleaf, MariaDB</dd>
+              </div>
+              <div>
+                <dt>Work</dt>
+                <dd>
+                  <ul>
+                    <li>B2C 여행 리뷰 플랫폼 신규 구축 참여</li>
+                    <li>Google/Naver 소셜 로그인 기능 구현</li>
+                    <li>사용자 설정, 리뷰 신고 등 실서비스 운영 기능 개발</li>
+                    <li>DB 테이블 설계서 및 ERD 작성</li>
+                  </ul>
+                </dd>
+              </div>
+            </dl>
+          </article>
+        </section>
+
+        <section class="resume-card company-card" aria-labelledby="epps-title">
+          <p class="label">2019.05 - 2022.02</p>
+          <h3 id="epps-title">이피피에스</h3>
+          <p class="company-meta">솔루션사업부 · 대리 3년차</p>
+
+          <article class="project-item" aria-labelledby="erp-title">
+            <p class="label">2021.08 - 2022.02</p>
+            <h4 id="erp-title">자사 ERP 솔루션 고도화</h4>
+            <dl>
+              <div>
+                <dt>Stack</dt>
+                <dd>Java, Spring Framework, Oracle, MyBatis, AngularJS</dd>
+              </div>
+              <div>
+                <dt>Work</dt>
+                <dd>
+                  <ul>
+                    <li>기존 SRM 시스템 고도화 진행</li>
+                    <li>타 프로젝트 서비스 모듈 이관 수행</li>
+                    <li>통합 테스트를 통해 이관 기능 안정성 확인</li>
+                  </ul>
+                </dd>
+              </div>
+            </dl>
+          </article>
+
+          <article class="project-item" aria-labelledby="db-title">
+            <p class="label">2021.03 - 2021.05</p>
+            <h4 id="db-title">효성 전자구매 시스템 DB 이관</h4>
+            <dl>
+              <div>
+                <dt>Stack</dt>
+                <dd>Java, TiberoDB, JSP, jQuery</dd>
+              </div>
+              <div>
+                <dt>Work</dt>
+                <dd>
+                  <ul>
+                    <li>데이터베이스 이관을 위한 구동환경 설정</li>
+                    <li>이관 대상 쿼리 변환 및 동작 확인</li>
+                    <li>기능 유닛 테스트, 통합 테스트, 시나리오 테스트 수행</li>
+                  </ul>
+                </dd>
+              </div>
+            </dl>
+          </article>
+
+          <article class="project-item" aria-labelledby="vcs-title">
+            <p class="label">2020.10 - 2020.12</p>
+            <h4 id="vcs-title">브이씨에스(VCS)</h4>
+            <dl>
+              <div>
+                <dt>Work</dt>
+                <dd>
+                  <ul>
+                    <li>Visualization Tool을 이용한 리포트용 표준 SQL 쿼리 작성</li>
+                    <li>조회 성능 개선을 위한 SQL 튜닝 수행</li>
+                  </ul>
+                </dd>
+              </div>
+            </dl>
+          </article>
+
+          <article class="project-item" aria-labelledby="food-title">
+            <p class="label">2019.10 - 2020.12</p>
+            <h4 id="food-title">한국외식업중앙회 신통합시스템 구축</h4>
+            <dl>
+              <div>
+                <dt>Stack</dt>
+                <dd>Java, Spring Framework, Oracle, MyBatis, AngularJS, UbiReport</dd>
+              </div>
+              <div>
+                <dt>Work</dt>
+                <dd>
+                  <ul>
+                    <li>ERP 회계/급여 모듈 개발 및 유지보수</li>
+                    <li>회계 기초 데이터 관리, 전표처리, 예산관리, 결산자료 조회 기능 담당</li>
+                    <li>급여 기본정보 관리, 급여자료 생성, 통계 데이터 조회 기능 개발</li>
+                    <li>운영 데이터 변경 추적을 위한 이력관리 도입</li>
+                    <li>UbiReport 기반 출력물 작성 및 시스템 연동 작업 진행</li>
+                  </ul>
+                </dd>
+              </div>
+            </dl>
+          </article>
+
+          <article class="project-item" aria-labelledby="bighit-title">
+            <p class="label">2019.05 - 2019.08</p>
+            <h4 id="bighit-title">빅히트 구매물류 시스템</h4>
+            <dl>
+              <div>
+                <dt>Stack</dt>
+                <dd>Java, Spring Framework, MySQL, MyBatis, AngularJS</dd>
+              </div>
+              <div>
+                <dt>Work</dt>
+                <dd>
+                  <ul>
+                    <li>화면정의서, 테이블정의서 등 개발 산출물 작성</li>
+                    <li>PTC, STC, 매뉴얼 등 테스트 및 운영 문서 작성</li>
+                  </ul>
+                </dd>
+              </div>
+            </dl>
+          </article>
+        </section>
+      </section>
+
+      <section class="desk-section side-project-section" aria-labelledby="side-project-section-title">
+        <div class="section-tab">
+          <span>03</span>
+          <h2 id="side-project-section-title">개인 프로젝트</h2>
+        </div>
+
+        <section class="resume-card side-project-card" aria-labelledby="antsgo-title">
+          <p class="label">2026.02 - 2026.05</p>
+          <h3 id="antsgo-title">AntsGo</h3>
+          <p class="company-meta">친구들과 함께 그룹 단위로 즐기는 주식 모의투자 서비스</p>
+          <div class="links project-links">
+            <a href="https://antsgo.devzzin.com" target="_blank" rel="noreferrer">antsgo.devzzin.com</a>
           </div>
-        </div>
+
+          <article class="project-item" aria-labelledby="antsgo-stack-title">
+            <p class="label">Stack</p>
+            <h4 id="antsgo-stack-title">기술 스택과 배포 환경</h4>
+            <dl>
+              <div>
+                <dt>Backend</dt>
+                <dd>Java, Spring Boot, JPA, PostgreSQL, Redis</dd>
+              </div>
+              <div>
+                <dt>Frontend</dt>
+                <dd>React, Vite, Vercel</dd>
+              </div>
+              <div>
+                <dt>Infra</dt>
+                <dd>
+                  <ul>
+                    <li>개인 Linux 서버에 백엔드 애플리케이션 배포</li>
+                    <li>개인 서버 환경에서 PostgreSQL 운영</li>
+                    <li>GitHub Actions와 Jenkins 기반 배포 자동화 구조 검토</li>
+                    <li>Claude Code를 활용해 기능 구현, 코드 구조 점검, 오류 해결 과정을 보조</li>
+                  </ul>
+                </dd>
+              </div>
+            </dl>
+          </article>
+
+          <article class="project-item" aria-labelledby="antsgo-pwa-title">
+            <p class="label">PWA</p>
+            <h4 id="antsgo-pwa-title">앱처럼 접근할 수 있는 웹앱 배포</h4>
+            <dl>
+              <div>
+                <dt>Decision</dt>
+                <dd>
+                  <ul>
+                    <li>iPhone 사용자의 접근성과 알림 니즈를 고려해 네이티브 앱 출시 검토</li>
+                    <li>Apple Developer Program 비용과 앱 심사 부담을 고려해 PWA 방식 선택</li>
+                    <li>앱 설치 없이 웹 기반으로 접근성을 확보하는 방향으로 배포 전략 전환</li>
+                  </ul>
+                </dd>
+              </div>
+              <div>
+                <dt>Result</dt>
+                <dd>
+                  <ul>
+                    <li>홈 화면 추가를 통해 앱처럼 바로 접근할 수 있는 사용 흐름 구성</li>
+                    <li>모바일 환경에서 사용할 수 있는 웹앱 형태로 배포 완료</li>
+                  </ul>
+                </dd>
+              </div>
+            </dl>
+          </article>
+
+          <article class="project-item" aria-labelledby="antsgo-work-title">
+            <p class="label">Work</p>
+            <h4 id="antsgo-work-title">주요 구현 기능</h4>
+            <dl>
+              <div>
+                <dt>Feature</dt>
+                <dd>
+                  <ul>
+                    <li>그룹 생성 및 친구 초대 기능 구현</li>
+                    <li>국내/국외 종목 검색 기능 구현</li>
+                    <li>매수/매도, 그룹 내 랭킹, 수익률 계산 기능 구현</li>
+                  </ul>
+                </dd>
+              </div>
+              <div>
+                <dt>Auth</dt>
+                <dd>
+                  <ul>
+                    <li>직접 가입 기반 회원 기능 구현</li>
+                    <li>Google, Kakao, Naver 소셜 로그인 구현</li>
+                    <li>기존 계정과 소셜 계정 연동 기능 구성</li>
+                  </ul>
+                </dd>
+              </div>
+              <div>
+                <dt>Market</dt>
+                <dd>
+                  <ul>
+                    <li>한국투자증권 API를 연동해 실시간 주가 데이터 조회</li>
+                    <li>한국거래소 공식 API를 연동해 종목 정보 조회</li>
+                    <li>과도한 API 호출을 막기 위해 30초 지연 정책 적용</li>
+                    <li>API 연동 실패 시 재조회와 Redis 캐시 데이터를 활용해 조회 안정성 보완</li>
+                  </ul>
+                </dd>
+              </div>
+              <div>
+                <dt>Order</dt>
+                <dd>
+                  <ul>
+                    <li>사용자 피드백을 반영해 지정가 주문 기능 추가</li>
+                    <li>30초 주기의 리스너가 주문 조건을 확인하도록 구현</li>
+                    <li>조건 충족 시 지정가 주문을 체결하는 흐름 구성</li>
+                  </ul>
+                </dd>
+              </div>
+            </dl>
+          </article>
+
+          <article class="project-item" aria-labelledby="antsgo-learn-title">
+            <p class="label">Learned</p>
+            <h4 id="antsgo-learn-title">기술적으로 배운 점</h4>
+            <dl>
+              <div>
+                <dt>JPA</dt>
+                <dd>
+                  <ul>
+                    <li>MyBatis 중심의 SQL Mapper 방식에서 JPA 기반 개발 방식으로 확장</li>
+                    <li>N+1 문제, 지연 로딩, 영속성 컨텍스트와 캐시 동작 학습</li>
+                    <li>항상 최신 데이터가 필요한 조회 흐름에서 JPA 동작 특성을 고려해 로직 점검</li>
+                  </ul>
+                </dd>
+              </div>
+              <div>
+                <dt>Operate</dt>
+                <dd>
+                  <ul>
+                    <li>외부 주가 API의 불안정성과 호출 제한을 고려한 예외 대응</li>
+                    <li>주가 조회 실패 시 재시도 로직 적용</li>
+                    <li>Redis 캐시 fallback 전략을 통해 이전 주가 정보 조회 흐름 구성</li>
+                  </ul>
+                </dd>
+              </div>
+            </dl>
+          </article>
+        </section>
       </section>
 
-      <section id="about" class="section">
-        <div class="section-heading">
-          <p class="eyebrow">About</p>
-          <h2>서비스가 오래 굴러가도록 만드는 개발을 지향합니다.</h2>
+      <section class="desk-section etc-section" aria-labelledby="etc-section-title">
+        <div class="section-tab">
+          <span>04</span>
+          <h2 id="etc-section-title">기타</h2>
         </div>
-        <div class="about-grid">
-          <article>
-            <h3>관심 영역</h3>
-            <p>
-              API 설계, 데이터 처리, 관리자 도구, 운영 이슈 개선처럼 제품의 기반을
-              단단하게 만드는 백엔드 업무에 관심이 있습니다.
-            </p>
-          </article>
-          <article>
-            <h3>일하는 방식</h3>
-            <p>
-              요구사항을 작게 나누고, 변경 가능성을 고려해 구현하며, 운영 중 발생할 수
-              있는 예외 상황을 먼저 떠올립니다.
-            </p>
-          </article>
-          <article>
-            <h3>성장 방향</h3>
-            <p>
-              안정적인 서버 구조와 데이터 중심 사고를 바탕으로, 사용자와 운영자가 모두
-              신뢰할 수 있는 서비스를 만드는 개발자로 성장하고 있습니다.
-            </p>
-          </article>
-        </div>
-      </section>
 
-      <section class="section skills-section">
-        <div class="section-heading">
-          <p class="eyebrow">Skills</p>
-          <h2>백엔드 업무에 필요한 기반 역량을 정리합니다.</h2>
-        </div>
-        <ul class="skill-list">
-          <li>Backend API</li>
-          <li>Database</li>
-          <li>CMS</li>
-          <li>Maintenance</li>
-          <li>Service Operation</li>
-          <li>Collaboration</li>
-        </ul>
-      </section>
-
-      <section id="projects" class="section">
-        <div class="section-heading">
-          <p class="eyebrow">Projects</p>
-          <h2>프로젝트 경험</h2>
-        </div>
-        <div class="project-list">
-          <article class="project-card">
+        <section class="resume-card etc-memo" aria-label="자격증">
+          <p class="label">certificate</p>
+          <h3>자격</h3>
+          <dl>
             <div>
-              <p class="project-type">Service</p>
-              <h3>투어클랜 서비스</h3>
+              <dt>정보처리기사</dt>
+              <dd>2022.06 최종합격 · 한국산업인력공단</dd>
             </div>
-            <p>
-              여행 관련 서비스의 기능 흐름과 운영 맥락을 이해하며, 서비스 유지와 개선에
-              필요한 백엔드 업무를 경험했습니다.
-            </p>
-            <ul>
-              <li>서비스 기능 흐름 분석</li>
-              <li>운영 이슈 확인 및 개선</li>
-              <li>데이터 처리 구조 이해</li>
-            </ul>
-          </article>
-
-          <article class="project-card">
-            <div>
-              <p class="project-type">CMS</p>
-              <h3>CMS 고도화</h3>
-            </div>
-            <p>
-              관리자 사용성을 고려해 CMS 기능을 정리하고, 운영자가 콘텐츠와 데이터를 더
-              안정적으로 다룰 수 있도록 개선 방향을 고민했습니다.
-            </p>
-            <ul>
-              <li>관리자 기능 개선</li>
-              <li>콘텐츠 관리 흐름 정리</li>
-              <li>운영 편의성 향상</li>
-            </ul>
-          </article>
-
-          <article class="project-card">
-            <div>
-              <p class="project-type">Maintenance</p>
-              <h3>CJ ENM 유지보수</h3>
-            </div>
-            <p>
-              운영 중인 서비스의 안정성을 우선으로 두고, 기존 구조를 파악하며 필요한
-              수정과 점검을 수행한 경험을 정리합니다.
-            </p>
-            <ul>
-              <li>기존 서비스 구조 파악</li>
-              <li>유지보수 요청 대응</li>
-              <li>운영 안정성 고려</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <section id="contact" class="section contact-section">
-        <div>
-          <p class="eyebrow">Contact</p>
-          <h2>함께 일할 수 있는 백엔드 개발자로 성장하고 있습니다.</h2>
-        </div>
-        <div class="contact-links">
-          <a href="mailto:dot015014@gmail.com">dot015014@gmail.com</a>
-          <a href="https://github.com/dot015014">github.com/dot015014</a>
-        </div>
+          </dl>
+        </section>
       </section>
     </main>
 
