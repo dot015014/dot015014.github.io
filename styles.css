@@ -1,17 +1,17 @@
 :root {
   color-scheme: light;
-  --bg: #fbfff1;
-  --surface: #ffffff;
-  --surface-strong: #f0f9df;
-  --text: #171c1a;
-  --muted: #68715f;
-  --line: #dfe8cf;
-  --accent: #f28db4;
-  --accent-dark: #d95f93;
-  --accent-soft: #ffe2ee;
-  --main: #d9f99d;
-  --main-soft: #f2ffd5;
-  --ink: #1c2515;
+  --bg: #fbfcf4;
+  --surface: #fffefd;
+  --surface-strong: #f4f8e8;
+  --text: #20231d;
+  --muted: #70756c;
+  --line: #e8eadf;
+  --accent: #e9a9bd;
+  --accent-dark: #c97994;
+  --accent-soft: #fdebf1;
+  --main: #edf6cf;
+  --main-soft: #f8fbe9;
+  --ink: #24291d;
 }
 
 * {
@@ -24,7 +24,10 @@ html {
 
 body {
   margin: 0;
-  background: var(--bg);
+  background:
+    radial-gradient(circle at 12% 8%, rgba(237, 246, 207, 0.72), transparent 30%),
+    radial-gradient(circle at 88% 2%, rgba(253, 235, 241, 0.74), transparent 24%),
+    var(--bg);
   color: var(--text);
   font-family:
     Inter, Pretendard, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -53,6 +56,7 @@ a {
   font-size: 15px;
   font-weight: 800;
   letter-spacing: 0;
+  color: #506239;
 }
 
 .nav {
@@ -75,7 +79,7 @@ main {
 .hero {
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
-  gap: 48px;
+  gap: 56px;
   align-items: center;
   min-height: calc(100vh - 78px);
   padding: 64px 0 92px;
@@ -83,7 +87,7 @@ main {
 
 .eyebrow {
   margin: 0 0 14px;
-  color: var(--accent);
+  color: var(--accent-dark);
   font-size: 13px;
   font-weight: 800;
   letter-spacing: 0;
@@ -101,7 +105,7 @@ h1 {
   margin-bottom: 22px;
   color: var(--ink);
   font-size: clamp(56px, 8vw, 108px);
-  font-weight: 850;
+  font-weight: 780;
   line-height: 0.95;
   letter-spacing: 0;
 }
@@ -123,7 +127,7 @@ h3 {
 .hero-lead {
   max-width: 640px;
   margin-bottom: 34px;
-  color: #3f4945;
+  color: #50564b;
   font-size: 20px;
 }
 
@@ -148,25 +152,38 @@ h3 {
 }
 
 .button.primary {
-  border-color: var(--accent-dark);
-  background: var(--accent-dark);
-  color: #ffffff;
+  border-color: #eab4c4;
+  background: var(--accent-soft);
+  color: #85435b;
 }
 
 .button.secondary,
 .contact-links a {
-  background: var(--surface);
+  background: rgba(255, 254, 253, 0.72);
 }
 
 .system-card {
-  border: 1px solid var(--line);
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(232, 234, 223, 0.9);
   border-radius: 8px;
   background:
-    linear-gradient(135deg, rgba(217, 249, 157, 0.64), transparent 34%),
-    linear-gradient(315deg, rgba(242, 141, 180, 0.2), transparent 38%),
+    linear-gradient(135deg, rgba(237, 246, 207, 0.78), transparent 42%),
+    linear-gradient(315deg, rgba(253, 235, 241, 0.82), transparent 46%),
     var(--surface);
-  box-shadow: 0 24px 70px rgba(47, 63, 32, 0.12);
+  box-shadow: 0 26px 80px rgba(83, 91, 65, 0.1);
   padding: 28px;
+}
+
+.system-card::before {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  width: 92px;
+  height: 92px;
+  border: 1px solid rgba(233, 169, 189, 0.4);
+  border-radius: 999px;
+  content: "";
 }
 
 .system-row {
@@ -179,12 +196,12 @@ h3 {
 .system-grid div {
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.78);
+  background: rgba(255, 255, 255, 0.66);
   padding: 18px;
 }
 
 .system-row span {
-  color: var(--accent-dark);
+  color: #6a7a42;
   font-weight: 850;
   text-align: center;
 }
@@ -213,7 +230,7 @@ h3 {
 }
 
 .section {
-  padding: 96px 0;
+  padding: 104px 0;
   border-top: 1px solid var(--line);
 }
 
@@ -234,9 +251,10 @@ h3 {
 
 .about-grid article,
 .project-card {
-  border: 1px solid var(--line);
+  border: 1px solid rgba(232, 234, 223, 0.9);
   border-radius: 8px;
-  background: var(--surface);
+  background: rgba(255, 254, 253, 0.74);
+  box-shadow: 0 16px 42px rgba(83, 91, 65, 0.06);
   padding: 26px;
 }
 
@@ -261,11 +279,11 @@ h3 {
 }
 
 .skill-list li {
-  border: 1px solid #cfe99a;
+  border: 1px solid #e3ecc4;
   border-radius: 8px;
   background: var(--main);
   padding: 10px 14px;
-  color: #405316;
+  color: #59683a;
   font-size: 14px;
   font-weight: 800;
 }
@@ -279,7 +297,7 @@ h3 {
 
 .project-type {
   margin-bottom: 8px;
-  color: var(--accent);
+  color: var(--accent-dark);
   font-size: 12px;
   font-weight: 850;
   text-transform: uppercase;
