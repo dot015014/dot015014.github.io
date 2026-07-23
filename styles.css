@@ -282,8 +282,24 @@ dd {
 dd ul {
   display: grid;
   gap: 6px;
+  list-style: none;
   margin: 0;
-  padding-left: 18px;
+  padding-left: 0;
+}
+
+dd li {
+  position: relative;
+  padding-left: 14px;
+}
+
+dd li::before {
+  position: absolute;
+  top: 0.82em;
+  left: 0;
+  width: 6px;
+  height: 1px;
+  background: var(--muted);
+  content: "";
 }
 
 .company-meta {
@@ -295,34 +311,8 @@ dd ul {
 .project-item {
   position: relative;
   border-top: 1px solid var(--soft-line);
-  padding-left: 22px;
   padding-top: 22px;
   margin-top: 22px;
-}
-
-.project-item::before {
-  position: absolute;
-  top: 29px;
-  left: 0;
-  width: 8px;
-  height: 8px;
-  border-radius: 999px;
-  background: var(--accent-strong);
-  content: "";
-}
-
-.project-item::after {
-  position: absolute;
-  top: 43px;
-  bottom: -24px;
-  left: 3px;
-  width: 1px;
-  background: var(--line);
-  content: "";
-}
-
-.project-item:last-child::after {
-  display: none;
 }
 
 .closing-memo {
@@ -374,6 +364,7 @@ dd ul {
   .map-memo,
   .project-memo,
   .company-card,
+  .side-project-card,
   .etc-memo,
   .closing-memo {
     grid-column: 1;
