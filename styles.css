@@ -227,7 +227,46 @@ h4 {
 }
 
 .project-links {
+  margin-bottom: 14px;
+}
+
+.demo-account {
   margin-bottom: 24px;
+}
+
+.screenshot-gallery {
+  display: flex;
+  gap: 14px;
+  margin: 0 0 28px;
+  overflow-x: auto;
+  padding: 2px 2px 14px;
+  scroll-snap-type: x proximity;
+  -webkit-overflow-scrolling: touch;
+}
+
+.screenshot-gallery figure {
+  flex: 0 0 176px;
+  margin: 0;
+  scroll-snap-align: start;
+}
+
+.screenshot-gallery img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  border: 1px solid var(--soft-line);
+  border-radius: 18px;
+  background: #fafafa;
+  object-fit: cover;
+  object-position: top;
+}
+
+.screenshot-gallery figcaption {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 760;
+  text-align: center;
 }
 
 .focus-memo ul {

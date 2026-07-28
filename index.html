@@ -303,10 +303,39 @@
           <div class="links project-links">
             <a href="https://antsgo.devzzin.com" target="_blank" rel="noreferrer">antsgo.devzzin.com</a>
           </div>
+          <dl class="demo-account" aria-label="AntsGo 데모 계정">
+            <div>
+              <dt>Demo Login</dt>
+              <dd>hi@ants.go / myantsgo26</dd>
+            </div>
+          </dl>
+
+          <div class="screenshot-gallery" aria-label="AntsGo 서비스 화면">
+            <figure>
+              <img src="./assets/antsgo/antsgo-screen-01.png" alt="AntsGo 인기종목 화면" loading="lazy" />
+              <figcaption>인기종목</figcaption>
+            </figure>
+            <figure>
+              <img src="./assets/antsgo/antsgo-screen-05.png" alt="AntsGo 종목 차트와 매수 매도 화면" loading="lazy" />
+              <figcaption>종목 상세</figcaption>
+            </figure>
+            <figure>
+              <img src="./assets/antsgo/antsgo-screen-04.png" alt="AntsGo 실시간 랭킹 화면" loading="lazy" />
+              <figcaption>실시간 랭킹</figcaption>
+            </figure>
+            <figure>
+              <img src="./assets/antsgo/antsgo-screen-02.png" alt="AntsGo 포트폴리오 자산 요약 화면" loading="lazy" />
+              <figcaption>포트폴리오</figcaption>
+            </figure>
+            <figure>
+              <img src="./assets/antsgo/antsgo-screen-03.png" alt="AntsGo 그룹 정보와 참여 멤버 화면" loading="lazy" />
+              <figcaption>그룹 정보</figcaption>
+            </figure>
+          </div>
 
           <article class="project-item" aria-labelledby="antsgo-stack-title">
             <p class="label">Stack</p>
-            <h4 id="antsgo-stack-title">기술 스택과 배포 환경</h4>
+            <h4 id="antsgo-stack-title">기술 스택</h4>
             <dl>
               <div>
                 <dt>Backend</dt>
@@ -316,34 +345,13 @@
                 <dt>Frontend</dt>
                 <dd>React, Vite, Vercel</dd>
               </div>
-              <div>
-                <dt>Infra</dt>
-                <dd>
-                  <ul>
-                    <li>개인 Linux 서버에 백엔드 애플리케이션 배포</li>
-                    <li>개인 서버 환경에서 PostgreSQL 운영</li>
-                    <li>GitHub Actions와 Jenkins 기반 배포 자동화 구조 검토</li>
-                    <li>Claude Code를 활용해 기능 구현, 코드 구조 점검, 오류 해결 과정을 보조</li>
-                  </ul>
-                </dd>
-              </div>
             </dl>
           </article>
 
           <article class="project-item" aria-labelledby="antsgo-pwa-title">
             <p class="label">PWA</p>
-            <h4 id="antsgo-pwa-title">앱처럼 접근할 수 있는 웹앱 배포</h4>
+            <h4 id="antsgo-pwa-title">웹앱 배포</h4>
             <dl>
-              <div>
-                <dt>Decision</dt>
-                <dd>
-                  <ul>
-                    <li>iPhone 사용자의 접근성과 알림 니즈를 고려해 네이티브 앱 출시 검토</li>
-                    <li>Apple Developer Program 비용과 앱 심사 부담을 고려해 PWA 방식 선택</li>
-                    <li>앱 설치 없이 웹 기반으로 접근성을 확보하는 방향으로 배포 전략 전환</li>
-                  </ul>
-                </dd>
-              </div>
               <div>
                 <dt>Result</dt>
                 <dd>
@@ -374,7 +382,6 @@
                 <dt>Auth</dt>
                 <dd>
                   <ul>
-                    <li>직접 가입 기반 회원 기능 구현</li>
                     <li>Google, Kakao, Naver 소셜 로그인 구현</li>
                     <li>기존 계정과 소셜 계정 연동 기능 구성</li>
                   </ul>
