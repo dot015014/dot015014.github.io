@@ -29,9 +29,14 @@
           <h1 id="intro-title">Java/Spring 기반 백엔드 개발자</h1>
           <div class="intro-profile" aria-label="기본 정보">
             <strong>신수진</strong>
-            <span>1995년생 · 만 30세</span>
             <span>웹개발 경력 4년 5개월</span>
-            <a href="mailto:pin01501495@gmail.com">pin01501495@gmail.com</a>
+            <button class="profile-toggle" type="button" aria-controls="private-profile" aria-expanded="false">
+              개인정보 보기
+            </button>
+            <span class="private-profile" id="private-profile" hidden>
+              <span>1995년생 · 만 30세</span>
+              <a href="mailto:pin01501495@gmail.com">pin01501495@gmail.com</a>
+            </span>
           </div>
         </section>
 
@@ -545,5 +550,16 @@
     <footer class="footer">
       <p>© 2026 Shin Sujin. Built for GitHub Pages.</p>
     </footer>
+    <script>
+      const profileToggle = document.querySelector(".profile-toggle");
+      const privateProfile = document.querySelector("#private-profile");
+
+      profileToggle?.addEventListener("click", () => {
+        const isExpanded = profileToggle.getAttribute("aria-expanded") === "true";
+        profileToggle.setAttribute("aria-expanded", String(!isExpanded));
+        profileToggle.textContent = isExpanded ? "개인정보 보기" : "개인정보 숨기기";
+        privateProfile.hidden = isExpanded;
+      });
+    </script>
   </body>
 </html>

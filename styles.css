@@ -158,7 +158,8 @@ h1 {
 
 .intro-profile strong,
 .intro-profile span,
-.intro-profile a {
+.intro-profile a,
+.profile-toggle {
   display: inline-flex;
   min-height: 32px;
   align-items: center;
@@ -166,6 +167,27 @@ h1 {
   border-radius: 999px;
   padding: 0 12px;
   background: #ffffff;
+}
+
+.profile-toggle {
+  color: var(--muted);
+  cursor: pointer;
+  font: inherit;
+  font-weight: 760;
+}
+
+.profile-toggle:hover {
+  border-color: #c7e4db;
+  background: var(--accent);
+  color: var(--text);
+}
+
+.private-profile {
+  display: contents;
+}
+
+.private-profile[hidden] {
+  display: none;
 }
 
 .intro-profile strong {
