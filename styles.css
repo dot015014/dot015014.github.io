@@ -156,9 +156,10 @@ h1 {
   font-size: 15px;
 }
 
-.intro-profile strong,
-.intro-profile span,
-.intro-profile a,
+.intro-profile > strong,
+.intro-profile > span:not(.private-profile),
+.private-profile > span,
+.private-profile > a,
 .profile-toggle {
   display: inline-flex;
   min-height: 32px;
@@ -183,11 +184,13 @@ h1 {
 }
 
 .private-profile {
-  display: contents;
+  display: none;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 
-.private-profile[hidden] {
-  display: none;
+.private-profile.is-visible {
+  display: inline-flex;
 }
 
 .intro-profile strong {

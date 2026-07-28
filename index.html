@@ -33,7 +33,7 @@
             <button class="profile-toggle" type="button" aria-controls="private-profile" aria-expanded="false">
               개인정보 보기
             </button>
-            <span class="private-profile" id="private-profile" hidden>
+            <span class="private-profile" id="private-profile" aria-hidden="true">
               <span>1995년생 · 만 30세</span>
               <a href="mailto:pin01501495@gmail.com">pin01501495@gmail.com</a>
             </span>
@@ -344,11 +344,19 @@
             <dl>
               <div>
                 <dt>Backend</dt>
-                <dd>Java, Spring Boot, JPA, PostgreSQL, Redis</dd>
+                <dd>Java 21, Spring Boot, Spring MVC, WebClient, JPA, Spring Security, JWT, OAuth 2.0</dd>
               </div>
               <div>
                 <dt>Frontend</dt>
-                <dd>React, Vite, Vercel</dd>
+                <dd>JavaScript, React, Vite, Vercel</dd>
+              </div>
+              <div>
+                <dt>Database</dt>
+                <dd>PostgreSQL, Redis</dd>
+              </div>
+              <div>
+                <dt>Infra</dt>
+                <dd>Docker, Docker Compose, Cloudflare R2, Gradle</dd>
               </div>
             </dl>
           </article>
@@ -448,6 +456,9 @@
           <p class="label">2026.07.17 - 2026.07.28</p>
           <h3 id="sweat-title">Sweat Comes True</h3>
           <p class="company-meta">루틴 관리부터 실시간 운동 수행, 식단 기록, 통계와 친구 피드까지 한곳에서 관리하는 모바일 중심 웨이트 트레이닝 기록 서비스</p>
+          <div class="links project-links">
+            <a href="https://sweatcomestrue.devzzin.com" target="_blank" rel="noreferrer">sweatcomestrue.devzzin.com</a>
+          </div>
 
           <div class="screenshot-gallery" aria-label="Sweat Comes True 서비스 화면">
             <figure>
@@ -469,12 +480,12 @@
             <h4 id="sweat-stack-title">기술 스택</h4>
             <dl>
               <div>
-                <dt>Frontend</dt>
-                <dd>Next.js 16, React 19, Tailwind CSS 4, Vercel</dd>
-              </div>
-              <div>
                 <dt>Backend</dt>
                 <dd>Java 21, Spring Boot 4, Spring Security, OAuth 2.0, JPA</dd>
+              </div>
+              <div>
+                <dt>Frontend</dt>
+                <dd>Next.js 16, React 19, Tailwind CSS 4, Vercel</dd>
               </div>
               <div>
                 <dt>Database</dt>
@@ -558,7 +569,8 @@
         const isExpanded = profileToggle.getAttribute("aria-expanded") === "true";
         profileToggle.setAttribute("aria-expanded", String(!isExpanded));
         profileToggle.textContent = isExpanded ? "개인정보 보기" : "개인정보 숨기기";
-        privateProfile.hidden = isExpanded;
+        privateProfile?.classList.toggle("is-visible", !isExpanded);
+        privateProfile?.setAttribute("aria-hidden", String(isExpanded));
       });
     </script>
   </body>
